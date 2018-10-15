@@ -1,0 +1,5 @@
+<view wx:for="{{logs.img}}">
+  <image src="{{item.src}}"></image>
+  <text>{{item.title}}</text>
+</view>
+

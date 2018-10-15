@@ -1,0 +1,23 @@
+<!--pages/hotelList/hotelList.wxml-->
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">上海</view>
+    <view class="flex-item bc_red">入住03-13</view>
+    <view class="flex-item bc_blue">离店03-14</view>
+  </view>
+</view>
+<view class="section">
+  <input placeholder="这是一个可以自动聚焦的input" auto-focus/>
+</view>
+<view class="page__bd">
+    <view class="section section_gap clearfix"wx:for="{{array}}" wx:for-item="item">
+     <view class="section__ctn">
+        <image style="width: 100px; height: 100px;" src="{{src}}"></image>
+      </view>
+      <view class="section__title">
+        <view>{{item.title}}</view>
+        <view><text class="fen">{{item.fen}}</text>{{item.dp}}</view>
+        <view>{{item.dq}} <text class="yuan">{{item.yuan}}</text>起</view>
+      </view>
+    </view>
+  </view>

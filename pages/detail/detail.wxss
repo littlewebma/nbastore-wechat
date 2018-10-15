@@ -1,0 +1,22 @@
+/* pages/detail/detail.wxss */
+.xq-d{
+  width:200px;
+  height:200px;
+  border:2px solid red;
+  margin: 0 auto
+}
+.xq-d>image{
+   width:200px;
+   height:200px;
+}
+.xq-x{
+  width:100%;
+  height:100px;
+  padding:10px 0
+}
+.xq-x>image{
+  width:20%;
+  height:60px;
+  float:left;
+  margin-left:15px
+}

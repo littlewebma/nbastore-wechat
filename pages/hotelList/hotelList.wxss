@@ -1,0 +1,28 @@
+/* pages/hotelList/hotelList.wxss */
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+}
+.flex-wrp {display: flex;}
+.flex-item{
+  width:33%;
+  height:30px;
+  text-align: center
+}
+input{
+  border:1px solid black
+}
+.section_gap>view{
+  float:left
+}
+.fen{
+  color:blue
+}
+.yuan{
+  color:yellow
+}
+.section__title>view{
+  margin-bottom: 10px
+}

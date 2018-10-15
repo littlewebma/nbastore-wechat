@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/nba/nba",
+    "pages/detail/detail",
+    "pages/shop-cart/shop-cart"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#405F80",
+    "borderStyle": "#CECECE",
+    "list": [
+      {
+        "pagePath": "pages/nba/nba",
+        "selectedIconPath": "images/3.1首页-选中.png",
+        "iconPath": "images/3.1首页.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop-cart/shop-cart",
+        "selectedIconPath": "images/3.1购物车-选中.png",
+        "iconPath": "images/3.1购物车.png",
+        "text": "购物车"
+      }
+    ]
+  }
+}

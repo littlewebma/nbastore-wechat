@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view class="xq">
+  <view class="xq-d">
+    <image src="{{dz}}"></image>
+  </view>
+  <view  class="xq-x">
+        <image wx:for="{{xt.child}}" wx:key="xt.child" src="{{item.src}}" data-src="{{item.src}}" bindtap="change"></image>
+  </view>
+</view>
+<view>
+  <text>{{xt.detail}}</text>
+  <text>￥{{xt.price}}</text>
+</view>
+
+<view bindtap="tocar" data-index="{{index}}" data-name="{{name}}" data-detail="{{xt.detail}}" data-price="{{xt.price}}" data-url="{{xt.url}}" data-title="{{xt.title}}">加入购物车</view>
+ 

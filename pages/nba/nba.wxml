@@ -1,0 +1,135 @@
+<!--pages/nba/nba.wxml-->
+<!--轮播图-->
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+      <swiper-item class="banner-swiper">
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+  <!--tab切换-->
+  <view class='container'>
+   <view class='scroll_box'>
+    <scroll-view  class="scroll-view_x" scroll-x="true" >
+      <view class="{{selected?'red':'default'}} scroll-item" bindtap='selected'>所有商品        </view>
+      <view class="{{selected1?'red':'default'}} scroll-item" bindtap='selected1'>球衣         </view>
+      <view class="{{selected2?'red':'default'}} scroll-item" bindtap='selected2'>上装          </view>
+      <view class="{{selected3?'red':'default'}} scroll-item" bindtap='selected3'>下装          </view>
+      <view class="{{selected4?'red':'default'}} scroll-item" bindtap='selected4'>鞋类          </view>
+      <view class="{{selected5?'red':'default'}} scroll-item" bindtap='selected5'>篮球          </view>
+    </scroll-view>
+  </view>
+  
+  
+  <view class="{{selected?'show':'hidden'}}">
+    <block wx:for="{{sj.qys}}"  wx:key="sj.qys">
+      <view class="store-item">
+        <view bindtap="tz" data-name="qys" data-index="{{index}}">
+          <image src="{{item.url}}"></image>
+          <text>{{item.detail}}</text>
+          <text>￥{{item.price}}</text>
+        </view>
+      </view>
+    </block>
+
+     <block wx:for="{{sj.xz}}" wx:key="sj.xz">
+        <view class="store-item">
+          <view bindtap="tz" data-name="xz" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+    </block>
+
+    <block wx:for="{{sj.shoe}}" wx:key="sj.shoe">
+        <block wx:for="{{sj.shoe}}" wx:key="sj.shoe">
+        <view class="store-item">
+          <view bindtap="tz" data-name="shoe" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+      </block>
+    </block>
+
+    <block wx:for="{{sj.ball}}" wx:key="sj.ball">
+        <view class="store-item">
+          <view bindtap="tz" data-name="ball" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+      </block>
+  </view>
+
+
+  <view class="{{selected1?'show':'hidden'}}">
+    <block wx:for="{{sj.qys}}"  wx:key="sj.qys">
+      <view class="store-item">
+        <view bindtap="tz" data-name="qys" data-index="{{index}}">
+          <image src="{{item.url}}"></image>
+          <text>{{item.detail}}</text>
+          <text>￥{{item.price}}</text>
+          </view>
+      </view>
+    </block>
+  </view>
+
+
+  <view class="{{selected2?'show':'hidden'}}">
+    <block wx:for="{{sj.sz}}" wx:key="sj.sz">
+        <view class="store-item">
+          <view bindtap="tz" data-name="sz" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+      </block>
+  </view>
+
+
+  <view class="{{selected3?'show':'hidden'}}">
+    <block wx:for="{{sj.xz}}" wx:key="sj.xz">
+        <view class="store-item">
+          <view bindtap="tz" data-name="xz" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+      </block>
+  </view>
+
+  <view class="{{selected4?'show':'hidden'}}">
+    <block wx:for="{{sj.shoe}}" wx:key="sj.shoe">
+        <view class="store-item">
+          <view bindtap="tz" data-name="shoe" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+      </block>
+  </view>
+
+  <view class="{{selected5?'show':'hidden'}}">
+    <block wx:for="{{sj.ball}}" wx:key="sj.ball">
+        <view class="store-item">
+          <view bindtap="tz" data-name="ball" data-index="{{index}}">
+            <image src="{{item.url}}"></image>
+            <text>{{item.detail}}</text>
+            <text>￥{{item.price}}</text>
+            </view>
+        </view>
+      </block>
+  </view>
+
+ 
+</view>
