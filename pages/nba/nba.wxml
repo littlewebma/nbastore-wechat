@@ -13,6 +13,7 @@
   <!--tab切换-->
   <view class='container'>
    <view class='scroll_box'>
+   <view class="huadong">←滑动→</view>
     <scroll-view  class="scroll-view_x" scroll-x="true" >
       <view class="{{selected?'red':'default'}} scroll-item" bindtap='selected'>所有商品        </view>
       <view class="{{selected1?'red':'default'}} scroll-item" bindtap='selected1'>球衣         </view>
